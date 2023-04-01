@@ -5,6 +5,7 @@ import UseContextHook from './Components/UseContext/UseContextHook';
 import UseReducerHookOne from './Components/UseReducer/ExampleOne/UseReducerHookOne';
 import CakeContainer from './Components/Redux-Example/CakeContainer';
 import IcecreamContainer from './Components/Redux-Example/IcecreamContainer';
+import Input from './Components/Form/Input';
 import {Provider} from 'react-redux'
 import store from './Redux/store';
 
@@ -18,8 +19,9 @@ function App() {
       {/* <UseCallbackHooks/> */}
       {/* <UseContextHook/> */}
       {/* <UseReducerHookOne/> */}
-      <CakeContainer/>
-      <IcecreamContainer/>
+      {/* <CakeContainer/>
+      <IcecreamContainer/> */}
+      <Input/>
     </div>
     </Provider>
    </>
