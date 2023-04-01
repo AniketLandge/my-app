@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import CounterOne from './Components/UseMemo/CounterOne';
+import UseCallbackHooks from './Components/UseCallback/UseCallbackHooks';
+import UseContextHook from './Components/UseContext/UseContextHook';
+import UseReducerHookOne from './Components/UseReducer/ExampleOne/UseReducerHookOne';
+import CakeContainer from './Components/Redux-Example/CakeContainer';
+import IcecreamContainer from './Components/Redux-Example/IcecreamContainer';
+import {Provider} from 'react-redux'
+import store from './Redux/store';
 
 function App() {
   return (
+
+   <>
+    <Provider store={store}>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <CounterOne/> */}
+      {/* <UseCallbackHooks/> */}
+      {/* <UseContextHook/> */}
+      {/* <UseReducerHookOne/> */}
+      <CakeContainer/>
+      <IcecreamContainer/>
     </div>
+    </Provider>
+   </>
   );
 }
 
