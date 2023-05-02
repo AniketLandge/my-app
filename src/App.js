@@ -33,7 +33,7 @@ function App() {
       {/* <Input2/> */}
       {/* <UseCallbackHooks2/> */}
       {/* <MyCounter/> */}
-      <UseEffectDemo name="spidey"/>
+      <UseEffectDemo name="spidey2"/>
     </div>
     </Provider>
    </>

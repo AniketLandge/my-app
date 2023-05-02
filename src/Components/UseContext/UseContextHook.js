@@ -3,6 +3,7 @@ import ComponentA from './ComponentA'
 
 export const UserContext = createContext(); //first step
 export const FriendContext = createContext();
+export const StudentContext = createContext();
 
 /*
 *
@@ -15,8 +16,10 @@ function UseContextHook() {
     <>
     <UserContext.Provider value={'Rohan Das'}> 
     <FriendContext.Provider value={"Vishal Malik"}>
+      <StudentContext.Provider value={'ShriVardhan'}>
     <div>UseContextHook</div>
     <ComponentA/>
+    </StudentContext.Provider>
     </FriendContext.Provider>
     </UserContext.Provider>
     
